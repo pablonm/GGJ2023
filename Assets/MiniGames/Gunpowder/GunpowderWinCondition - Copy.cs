@@ -3,10 +3,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GunPowderWinConditions : MonoBehaviour
+public class GunPowderWinCondition : MonoBehaviour
 {
-    public static GunPowderWinConditions Instance;
-    public GunPowderWinConditions[] winCondition;
+    public static GunPowderWinCondition Instance;
+    public GunPowderWinCondition[] winCondition;
     public bool won = false;
 
     private void Awake()
