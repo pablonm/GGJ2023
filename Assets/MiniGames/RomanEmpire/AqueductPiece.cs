@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Pipe : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler
+public class AqueductPiece : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler
 {
     public PipeTypes pipeType;
     public PipeOrientations currentOrientation = PipeOrientations.Up;
-    public Slot startingSlot;
+    public AqueductSlot startingSlot;
     Image img;
 
     private void Awake()
@@ -20,6 +20,7 @@ public class Pipe : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
     public void Rotate()
     {
         currentOrientation += 1;
+        SFXController.Play("piece");
         if (currentOrientation > PipeOrientations.Left)
             currentOrientation = PipeOrientations.Up;
         ApplyRotation();
@@ -34,7 +35,7 @@ public class Pipe : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
     void IBeginDragHandler.OnBeginDrag(PointerEventData eventData)
     {
         img.raycastTarget = false;
-        startingSlot = transform.parent.gameObject.GetComponent<Slot>();
+        startingSlot = transform.parent.gameObject.GetComponent<AqueductSlot>();
     }
 
     void IDragHandler.OnDrag(PointerEventData eventData)
@@ -46,6 +47,7 @@ public class Pipe : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
     {
         img.raycastTarget = true;
         startingSlot.PlacePipe(this);
+        SFXController.Play("piece");
     }
 
     void IPointerClickHandler.OnPointerClick(PointerEventData eventData)
@@ -55,4 +57,4 @@ public class Pipe : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
 }
 
 public enum PipeOrientations { Up, Right, Down, Left }
-public enum PipeTypes { L, I }
+public enum PipeTypes { Pipe, Superior, Inferior }

@@ -43,7 +43,7 @@ public class RomanPipesWinConditions : MonoBehaviour
     bool checkConditionPiece(RomanPipesWinConditionPiece conditionPiece)
     {
         bool conditionSatisfied = true;
-        Pipe pipe = conditionPiece.slot.gameObject.GetComponentInChildren<Pipe>();
+        AqueductPiece pipe = conditionPiece.slot.gameObject.GetComponentInChildren<AqueductPiece>();
         conditionSatisfied = conditionSatisfied && pipe != null;
         if (pipe != null) {
             conditionSatisfied = conditionSatisfied && conditionPiece.pipeType == pipe.pipeType;
@@ -56,6 +56,7 @@ public class RomanPipesWinConditions : MonoBehaviour
     IEnumerator EndMinigGame()
     {
         GameState.SetNextAge(Ages.Prehistory);
+        SFXController.Play("success");
         FadeToBlack.FadeOut(1f, null);
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
@@ -72,7 +73,7 @@ public class RomanPipesWinCondition
 [System.Serializable]
 public class RomanPipesWinConditionPiece
 {
-    public Slot slot;
+    public AqueductSlot slot;
     public PipeTypes pipeType;
     public PipeOrientations[] possibleOrientations;
 }
