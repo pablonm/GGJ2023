@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MainSceneController : MonoBehaviour
 {
-    public GameObject test;
-
     private void Start()
     {
         GoToAge(GameState.previousAge, true);
