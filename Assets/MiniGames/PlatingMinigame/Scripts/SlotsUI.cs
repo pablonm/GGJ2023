@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace MiniGames.PlatingMinigame.Sprites
+namespace MiniGames.PlatingMinigame.Scripts
 {
     public class SlotsUI : MonoBehaviour
     {
