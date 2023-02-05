@@ -11,7 +11,8 @@ public class MiniGamePreview : MonoBehaviour
 
     public void OpenMiniGame()
     {
-        if (loading == false)
+        Age parentAge = transform.parent.GetComponent<Age>();
+        if (loading == false && parentAge.ageName == GameState.currentAge)
             StartCoroutine(OpenMiniGameCoroutine());
     }
 
