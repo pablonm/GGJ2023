@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class Ingredient : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    public IngredientSlot startingSlot;
+    public Vector3 startingSlot;
     public IngredientNames ingredientName;
 
     Image img;
@@ -19,7 +19,7 @@ public class Ingredient : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     void IBeginDragHandler.OnBeginDrag(PointerEventData eventData)
     {
         img.raycastTarget = false;
-        startingSlot = transform.parent.gameObject.GetComponent<IngredientSlot>();
+        startingSlot = transform.parent.position;
         SFXController.Play("polvora");
     }
 
@@ -31,7 +31,7 @@ public class Ingredient : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     void IEndDragHandler.OnEndDrag(PointerEventData eventData)
     {
         img.raycastTarget = true;
-        startingSlot.DropIngredient(this);
+        transform.position = startingSlot;
     }
 }
 

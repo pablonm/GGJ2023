@@ -7,9 +7,15 @@ public class GunpowderWinConditions : MonoBehaviour
 {
     public CanvasGroup canvasGroup;
     public static GunpowderWinConditions Instance;
-    public GunpowderWinCondition[] winConditions;
     public bool won = false;
-
+    public int carbonAmount;
+    public int azufreAmount;
+    public int potasioAmount;
+    public int charcoalCurrentAmount;
+    public int azufreCurrentAmount;
+    public int potasiumCurrentAmount;
+    public GameObject[] mezclas;
+    private int currentMezcla = 0;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -18,69 +24,75 @@ public class GunpowderWinConditions : MonoBehaviour
             Instance = this;
     }
 
-    public static void CheckWinConditions()
+    public static void AddIngredient(IngredientNames name)
     {
-        if (Instance.won) return;
-        bool hasWon = false;
-        foreach (GunpowderWinCondition winCondition in Instance.winConditions)
+        switch (name)
         {
-            bool winConditionSatisfied = true;
-            foreach (GunpowderWinConditionIngredient conditionPiece in winCondition.conditions)
-            {
-                winConditionSatisfied = winConditionSatisfied && Instance.checkConditionPiece(conditionPiece);
-            }
-            hasWon = hasWon || winConditionSatisfied;
+            case IngredientNames.carbon:
+                if (Instance.charcoalCurrentAmount < Instance.carbonAmount)
+                {
+                    Instance.charcoalCurrentAmount++;
+                    SFXController.Play("ok");
+                    if (Instance.charcoalCurrentAmount == Instance.carbonAmount)
+                    {
+                        Instance.mezclas[Instance.currentMezcla].SetActive(true);
+                        Instance.currentMezcla++;
+                    }
+                }
+                else
+                {
+                    Debug.Log("here");
+                    SFXController.Play("wrong");
+                }
+                break;
+            case IngredientNames.azufre:
+                if (Instance.azufreCurrentAmount < Instance.azufreAmount)
+                {
+                    Instance.azufreCurrentAmount++;
+                    SFXController.Play("ok");
+                    if (Instance.azufreCurrentAmount == Instance.azufreAmount)
+                    {
+                        Instance.mezclas[Instance.currentMezcla].SetActive(true);
+                        Instance.currentMezcla++;
+                    }
+                } else
+                {
+                    Debug.Log("here");
+                    SFXController.Play("wrong");
+                }
+                break;
+            case IngredientNames.potasio:
+                if (Instance.potasiumCurrentAmount < Instance.potasioAmount)
+                {
+                    Instance.potasiumCurrentAmount++;
+                    SFXController.Play("ok");
+                    if (Instance.potasiumCurrentAmount == Instance.potasioAmount)
+                    {
+                        Instance.mezclas[Instance.currentMezcla].SetActive(true);
+                        Instance.currentMezcla++;
+                    }
+                } else
+                {
+                    SFXController.Play("wrong");
+                }
+                break;
         }
 
-        Instance.won = hasWon;
-
-        if (Instance.won)
+        if (Instance.charcoalCurrentAmount == Instance.carbonAmount 
+            && Instance.potasiumCurrentAmount == Instance.potasioAmount 
+            && Instance.azufreCurrentAmount == Instance.azufreAmount)
         {
             Instance.StartCoroutine(Instance.EndMiniGame());
         }
     }
-
-    bool checkConditionPiece(GunpowderWinConditionIngredient conditionPiece)
-    {
-        bool conditionSatisfied = false;
-        Ingredient ingredient = conditionPiece.slot.GetComponentInChildren<Ingredient>();
-        switch (ingredient.ingredientName)
-        {
-            case IngredientNames.carbon : conditionPiece.Ingredientquantity[0] = +1;
-                break;
-            case IngredientNames.azufre : conditionPiece.Ingredientquantity[1] = +1;
-                break;
-            case IngredientNames.potasio : conditionPiece.Ingredientquantity[2] = +1;
-                break;
-        }
-        
-        conditionSatisfied = conditionPiece.Ingredientquantity[0] >= 1 
-                                                && conditionPiece.Ingredientquantity[1] >= 2
-                                                && conditionPiece.Ingredientquantity[2] >= 3;
-
-        return conditionSatisfied;
-    }
-
+    
     IEnumerator EndMiniGame()
     {
         GameState.SetNextAge(Ages.Ancient);
         FadeToBlack.FadeOut(1f, null);
+        SFXController.Play("success");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
         yield break;
     }
-}
-
-[System.Serializable]
-public class GunpowderWinCondition
-{
-    public GunpowderWinConditionIngredient[] conditions;
-}
-
-[System.Serializable]
-public class GunpowderWinConditionIngredient
-{
-    public IngredientSlot slot;
-    public IngredientNames ingredientName;
-    public int[] Ingredientquantity = { 0, 0, 0 };
 }
