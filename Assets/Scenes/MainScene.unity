@@ -1041,7 +1041,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f4ca2c6a6549cae4bbb4ebe397df0cda, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6342aa33657d7cf40a2aa7421784e046, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.5529412}
   m_FlipX: 0
   m_FlipY: 0
@@ -1800,7 +1800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66adc7c50496d7f418b66e4f66ed7f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MiniGameSceneName: EndCinematic
+  MiniGameSceneName: EndScene
   minigame: 6
 --- !u!114 &1954327253
 MonoBehaviour:

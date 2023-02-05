@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/MiniGames/Gamejam/Gamejam.unity
     guid: 3492ba218ba9243478e83d7523039755
   - enabled: 1
+    path: Assets/EndScene/EndScene.unity
+    guid: f23d85ef6a0932e44868cb5de1a72cbe
+ - enabled: 1
     path: Assets/MiniGames/Gunpowder/GunpowderMiniGame.unity
     guid: 733350149bfe4424284e14cb48dd4d29
   m_configObjects: {}
