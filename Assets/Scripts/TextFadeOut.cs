@@ -24,7 +24,7 @@ public class TextFadeOut : MonoBehaviour
     
     IEnumerator FadeOutText()
     {
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(1f);
         _fadeOut = true;
     }
     

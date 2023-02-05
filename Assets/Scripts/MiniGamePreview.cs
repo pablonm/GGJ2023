@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MiniGamePreview : MonoBehaviour
 {
     public string MiniGameSceneName;
+    public CursorController.Minigame minigame;
     bool loading = false;
 
     public void OpenMiniGame()
@@ -20,7 +22,7 @@ public class MiniGamePreview : MonoBehaviour
             BGM.GetComponent<AudioSource>().Pause();
         FadeToBlack.FadeOut(1f, null);
         yield return new WaitForSeconds(1f);
+        CursorController.Instance.currentMinigame = minigame;
         SceneManager.LoadScene(MiniGameSceneName, LoadSceneMode.Single);
-        yield break;
     }
 }

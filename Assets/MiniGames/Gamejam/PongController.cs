@@ -7,10 +7,8 @@ using UnityEngine.SceneManagement;
 public class PongController : MonoBehaviour
 {
     public int playerScore;
-    public int gameScore;
     public int maxScore;
     public TextMeshProUGUI playerScoreText;
-    public TextMeshProUGUI gameScoreText;
 
     public static PongController Instance;
 
@@ -25,7 +23,6 @@ public class PongController : MonoBehaviour
     private void Start()
     {
         playerScore = 0;
-        gameScore = 0;
         UpdateScores();
         
     }
@@ -33,13 +30,13 @@ public class PongController : MonoBehaviour
     public static void UpdateScores()
     {
         Instance.playerScoreText.text = Instance.playerScore.ToString();
-        Instance.gameScoreText.text = Instance.gameScore.ToString();
         if (Instance.playerScore >= Instance.maxScore)
             Instance.StartCoroutine(Instance.EndMinigGame());
     }
 
     IEnumerator EndMinigGame()
     {
+        CursorController.Instance.currentMinigame = CursorController.Minigame.MainScene;
         GameState.SetNextAge(Ages.Modern);
         SFXController.Play("success");
         yield return new WaitForSeconds(1f);

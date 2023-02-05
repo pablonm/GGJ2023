@@ -45,6 +45,7 @@ namespace MiniGames.PlanetsDiscovery.Scripts
 
         public void FinishMinigame()
         {
+            
             _mainCamera.GetComponent<PlanetsCamera>().isCompleted = true;
             _isCompleted = true;
             StartCoroutine(EndMinigame());
@@ -53,6 +54,7 @@ namespace MiniGames.PlanetsDiscovery.Scripts
         
         IEnumerator EndMinigame()
         {
+            CursorController.Instance.currentMinigame = CursorController.Minigame.MainScene;
             yield return new WaitForSeconds(2f);
             GameState.SetNextAge(Ages.Middle);
             SFXController.Play("success");
