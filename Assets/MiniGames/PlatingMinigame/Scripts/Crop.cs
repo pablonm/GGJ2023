@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace MiniGames.PlatingMinigame.Scripts
@@ -39,7 +40,14 @@ namespace MiniGames.PlatingMinigame.Scripts
         IEnumerator CompleteLevel()
         {
             yield return new WaitForSeconds(.5f);
-            image.sprite = stateSprites[(int)CropState.Completed+1];
+            image.sprite = stateSprites[(int)CropState.Completed+1]; yield return new WaitForSeconds(2f);
+            GameState.SetNextAge(Ages.End);
+            SFXController.Play("success");
+            FadeToBlack.FadeOut(1f, null);
+            yield return new WaitForSeconds(1f);
+            CursorController.Instance.currentMinigame = CursorController.Minigame.MainScene;
+            SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+            
         }
 
         private void UpdateState(PlantingItem item)
