@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66adc7c50496d7f418b66e4f66ed7f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MiniGameSceneName: RomanEmpireMiniGame
+  MiniGameSceneName: GunpowderMiniGame
   minigame: 3
 --- !u!114 &423882465
 MonoBehaviour:
