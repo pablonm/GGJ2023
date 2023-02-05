@@ -747,7 +747,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Anota 5!
+  m_text: Score 5!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1584be4d57248c24f9ed08c31408478f, type: 2}
   m_sharedMaterial: {fileID: 3195976209211619921, guid: 1584be4d57248c24f9ed08c31408478f, type: 2}
