@@ -50,5 +50,6 @@ MonoBehaviour:
   - {fileID: 2800000, guid: b3c69f820bec0784e87f6db0582ab711, type: 3}
   - {fileID: 2800000, guid: 4da3234ee2e749b4abe08633a387e5fb, type: 3}
   - {fileID: 2800000, guid: 304e45d1e3612c84d932891f4c290ef2, type: 3}
-  - {fileID: 2800000, guid: 6faa7557df6ffa14a88b711edca34391, type: 3}
+  - {fileID: 2800000, guid: 4481eae8cf95563c3ac14cf8741ac8b1, type: 3}
+  - {fileID: 2800000, guid: ef4ce62342a4b91e199d294be9cd8ad3, type: 3}
   currentMinigame: 0
