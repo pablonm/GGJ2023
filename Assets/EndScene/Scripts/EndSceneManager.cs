@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class EndSceneManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float timeToNextScene;
+
     void Start()
     {
         StartCoroutine(JumpToCredits());
@@ -13,8 +14,9 @@ public class EndSceneManager : MonoBehaviour
 
     IEnumerator JumpToCredits()
     {
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(timeToNextScene);
         FadeToBlack.FadeOut(1f, null);
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("Credits", LoadSceneMode.Single);
     }
 }
