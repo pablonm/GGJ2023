@@ -27,7 +27,7 @@ public class CameraController : MonoBehaviour
         Instance.targetPosition = target.transform.position;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         transform.position = Vector3.Lerp(transform.position, new Vector3(targetPosition.x, targetPosition.y, transform.position.z), smoothFactor);
     }

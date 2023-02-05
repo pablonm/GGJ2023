@@ -923,7 +923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd159b7b9c85a6b47968a30929e8fd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothFactor: 0.005
+  smoothFactor: 0.05
 --- !u!1 &551595937
 GameObject:
   m_ObjectHideFlags: 0

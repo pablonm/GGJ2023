@@ -32,7 +32,7 @@ public class CreditsManager : MonoBehaviour
 
     public void LoadTitleScene()
     {
-        SceneManager.LoadScene("Title", LoadSceneMode.Single);
+        Application.Quit();
     }
 
 }
