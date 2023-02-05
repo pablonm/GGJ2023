@@ -2074,7 +2074,7 @@ MonoBehaviour:
   - name: success
     clip: {fileID: 8300000, guid: 113bc2b40f4a0e9428c32867a19d91d4, type: 3}
   - name: click
-    clip: {fileID: 8300000, guid: 2f4a2f7373a3346478935d1ee60f2a7b, type: 3}
+    clip: {fileID: 8300000, guid: 67f647ab859fc7e4b92689414a91442b, type: 3}
 --- !u!82 &1606865927
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2087,7 +2087,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
