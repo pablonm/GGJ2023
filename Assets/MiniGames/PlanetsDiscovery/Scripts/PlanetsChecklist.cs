@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -45,6 +47,18 @@ namespace MiniGames.PlanetsDiscovery.Scripts
         {
             _mainCamera.GetComponent<PlanetsCamera>().isCompleted = true;
             _isCompleted = true;
+            StartCoroutine(EndMinigame());
+
+        }
+        
+        IEnumerator EndMinigame()
+        {
+            yield return new WaitForSeconds(2f);
+            GameState.SetNextAge(Ages.Middle);
+            SFXController.Play("success");
+            FadeToBlack.FadeOut(1f, null);
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
         }
 
         private void Update()
