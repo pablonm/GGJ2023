@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/MiniGames/PlatingMinigame/PlantingMingame.unity
     guid: 32ba3e44e6473e64eba1861929dae977
   - enabled: 1
-    path: Assets/MiniGames/Gunpowder/GunpowderMiniGame.unity
+    path: Assets/MiniGames/Gunpowder/Gunpowder.unity
     guid: 733350149bfe4424284e14cb48dd4d29
   - enabled: 1
     path: Assets/MiniGames/Gamejam/Gamejam.unity
