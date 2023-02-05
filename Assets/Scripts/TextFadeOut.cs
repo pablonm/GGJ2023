@@ -4,7 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlantingGameManager : MonoBehaviour
+public class TextFadeOut : MonoBehaviour
 {
     [SerializeField] private TMP_Text instructionText;
     private bool _fadeOut = false;

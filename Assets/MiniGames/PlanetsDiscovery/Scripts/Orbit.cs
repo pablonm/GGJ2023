@@ -7,20 +7,23 @@ namespace MiniGames.PlanetsDiscovery.Scripts
         public float xSpread;
         public float ySpread;
         private Transform _centerPoint;
-        public bool IsOrbiting { get; } = false;
+        public bool isOrbiting = false;
 
         public float rotSpeed;
 
-        private float _timer = 0;
+        [SerializeField] private float _timer = 0;
+        private Vector2 _initialPosition;
     
         void Start()
         {
             _centerPoint = GameObject.Find("Sun").transform;
+            _initialPosition = transform.position;
+            _timer = Vector2.SignedAngle(_initialPosition, Vector2.right);
         }
 
         void Update()
         {
-            if (IsOrbiting)
+            if (isOrbiting)
             {
                 _timer += Time.deltaTime * rotSpeed;
                 Rotate();
@@ -33,6 +36,8 @@ namespace MiniGames.PlanetsDiscovery.Scripts
             float y = Mathf.Sin(_timer) * ySpread;
             Vector3 pos = new Vector2(x, y);
             transform.position = pos + _centerPoint.position;
+
+            
         }
     
     }
