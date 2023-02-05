@@ -1,0 +1,905 @@
+fileFormatVersion: 2
+guid: 4c83f88dc9df4df45ae4343484f40ffb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1278
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ed7433bfa64b645b1b1c8612890981
+      internalID: -1874759978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1278
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca9822f06c9189449a2e53095d838a6
+      internalID: -738317350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1278
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a2b432e63da7742ab7ed5639d1edc7
+      internalID: 1078071517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1278
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98e755118d7b6c42ad8ecd4351ffc96
+      internalID: 36309954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1278
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d2e5e55b01e024396b9b9e4652bbb3
+      internalID: 475002364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1278
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bebc2f49988a374e86bfdb844de5d49
+      internalID: 2025262614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1023
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee8562201beb0e4f96c8d660b4cb1ca
+      internalID: -1040368936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1023
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1192d0f1e27f6be41b5c65153195caa6
+      internalID: 1343577789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 1023
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffd5200937c45f479f04a8203f1862c
+      internalID: 577726508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1023
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74a8b9203f64d54ab620bc383d07f59
+      internalID: 1761244696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1023
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbf75836b3c53f4f9b6172f604c4686
+      internalID: -603035710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1023
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ac1539b68ce6447ba6ca23eb50e926
+      internalID: 353516565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 768
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c3ee68fdce1a846a54b95ea639d646
+      internalID: 1558493710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 768
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774c89f52f7cb23409ba6b4e4f5e69c0
+      internalID: -1181336891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 768
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313e0f0ed272d834a9b524bdfb208cdd
+      internalID: 1558635479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 768
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155d828c80e38a84c9c910f383be243a
+      internalID: -2054913391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 768
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3db6c08723a7594abd905244ce79bb0
+      internalID: 470924318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 768
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e83d9b6329f562409be75353d2a8cdb
+      internalID: -1456722265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 513
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaa2c4c127141d4883902dad7b5a947
+      internalID: 1591728039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 513
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95d894ceb6113d48a0aabb603b275dd
+      internalID: 1336030720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 513
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b59504626d7204185be1c9825df178
+      internalID: -470793665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 513
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36173209c2e602e47813b54381d19c5b
+      internalID: -156169840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 513
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6bd145dd240294d8d3273fd761cd04
+      internalID: 152031998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 513
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d64468c06481e74682e0d9d5c837071
+      internalID: 1689752894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 258
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2482c61b1ddb1843acd3033f54b1df6
+      internalID: -1642120534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 258
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cda5e8cd340f146b7c825c76f7eeab
+      internalID: 506353002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 258
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984eee800574e0446b05e7466441b918
+      internalID: 1548172589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 258
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6556f1e10b2dfa4a9b83d64d3d02ea0
+      internalID: -893059644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 258
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510e790cf05c250468f283be05752d95
+      internalID: -2110907184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 258
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78e1be1918b8ad49a5fb41fb08bbd19
+      internalID: 1518035422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a34a9c8fa82ad4db4869912e1b6211
+      internalID: 1598320943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 3
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ddcd9e064afae43b65c313559f6bd3
+      internalID: -402702014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 3
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2385c5d72c35d864c85f57cc8826e813
+      internalID: 972139868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 3
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea48d0473939b34db1629e50fa00adf
+      internalID: -290426475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FondoFinal - SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 3
+        width: 280
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6eb052237a5c44592108c0eaf91b5b
+      internalID: 912554665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FondoFinal - SpriteSheet_34: 912554665
+      FondoFinal - SpriteSheet_13: -1181336891
+      FondoFinal - SpriteSheet_1: -738317350
+      FondoFinal - SpriteSheet_31: -402702014
+      FondoFinal - SpriteSheet_30: 1598320943
+      FondoFinal - SpriteSheet_10: -603035710
+      FondoFinal - SpriteSheet_7: 1343577789
+      FondoFinal - SpriteSheet_18: 1591728039
+      FondoFinal - SpriteSheet_23: 1689752894
+      FondoFinal - SpriteSheet_21: -156169840
+      FondoFinal - SpriteSheet_16: 470924318
+      FondoFinal - SpriteSheet_29: 1518035422
+      FondoFinal - SpriteSheet_0: -1874759978
+      FondoFinal - SpriteSheet_4: 475002364
+      FondoFinal - SpriteSheet_5: 2025262614
+      FondoFinal - SpriteSheet_28: -2110907184
+      FondoFinal - SpriteSheet_24: -1642120534
+      FondoFinal - SpriteSheet_11: 353516565
+      FondoFinal - SpriteSheet_3: 36309954
+      FondoFinal - SpriteSheet_27: -893059644
+      FondoFinal - SpriteSheet_20: -470793665
+      FondoFinal - SpriteSheet_19: 1336030720
+      FondoFinal - SpriteSheet_17: -1456722265
+      FondoFinal - SpriteSheet_22: 152031998
+      FondoFinal - SpriteSheet_25: 506353002
+      FondoFinal - SpriteSheet_26: 1548172589
+      FondoFinal - SpriteSheet_14: 1558635479
+      FondoFinal - SpriteSheet_8: 577726508
+      FondoFinal - SpriteSheet_6: -1040368936
+      FondoFinal - SpriteSheet_2: 1078071517
+      FondoFinal - SpriteSheet_32: 972139868
+      FondoFinal - SpriteSheet_9: 1761244696
+      FondoFinal - SpriteSheet_12: 1558493710
+      FondoFinal - SpriteSheet_15: -2054913391
+      FondoFinal - SpriteSheet_33: -290426475
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
