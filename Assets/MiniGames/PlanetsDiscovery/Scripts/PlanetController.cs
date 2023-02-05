@@ -8,6 +8,7 @@ namespace MiniGames.PlanetsDiscovery.Scripts
     {
         public void ReleaseThis()
         {
+            SFXController.Play("select");
             PlanetsChecklist.Instance.ReleasePlanet((Planets) Enum.Parse(typeof(Planets), gameObject.name));
         }
     }
