@@ -10,10 +10,9 @@ public class PongScoreWall : MonoBehaviour
     {
         if (coll.collider.CompareTag("PongBall"))
         {
-            if (isPlayerSide)
-                PongController.Instance.gameScore++;
-            else
+            if (!isPlayerSide)
                 PongController.Instance.playerScore++;
+            
             PongController.UpdateScores();
             if (PongController.Instance.playerScore >= PongController.Instance.maxScore)
                 coll.collider.gameObject.GetComponent<PongBall>().MakeBallIdle();

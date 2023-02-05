@@ -55,6 +55,7 @@ public class RomanPipesWinConditions : MonoBehaviour
 
     IEnumerator EndMinigGame()
     {
+        CursorController.Instance.currentMinigame = CursorController.Minigame.MainScene;
         GameState.SetNextAge(Ages.Prehistory);
         SFXController.Play("success");
         FadeToBlack.FadeOut(1f, null);

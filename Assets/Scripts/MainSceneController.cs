@@ -51,5 +51,6 @@ public enum Ages
     Ancient,
     Middle,
     Modern,
-    Contemporary
+    Contemporary,
+    End
 }

@@ -20,11 +20,12 @@ public class TextFadeOut : MonoBehaviour
         {
             instructionText.alpha -= Time.deltaTime;
         }
+        instructionText.gameObject.SetActive(instructionText.alpha > 0);
     }
     
     IEnumerator FadeOutText()
     {
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(1f);
         _fadeOut = true;
     }
     
