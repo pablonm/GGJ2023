@@ -57,7 +57,6 @@ public class GunpowderWinConditions : MonoBehaviour
                     }
                 } else
                 {
-                    Debug.Log("here");
                     SFXController.Play("wrong");
                 }
                 break;

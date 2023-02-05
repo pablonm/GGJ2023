@@ -20,7 +20,6 @@ public class Ingredient : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     {
         img.raycastTarget = false;
         startingSlot = transform.parent.position;
-        SFXController.Play("polvora");
     }
 
     void IDragHandler.OnDrag(PointerEventData eventData)

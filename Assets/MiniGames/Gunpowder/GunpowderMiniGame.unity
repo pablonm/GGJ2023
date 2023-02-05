@@ -1419,12 +1419,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - name: polvora
-    clip: {fileID: 8300000, guid: ab7ecbaff1192b3ad90c8a2a7395bd44, type: 3}
   - name: success
     clip: {fileID: 8300000, guid: 113bc2b40f4a0e9428c32867a19d91d4, type: 3}
   - name: wrong
     clip: {fileID: 8300000, guid: d4631cd6285635967b91667729302f53, type: 3}
+  - name: ok
+    clip: {fileID: 8300000, guid: 0915e9d3972d1cc89bfe06095ce58e30, type: 3}
 --- !u!4 &1045317375
 Transform:
   m_ObjectHideFlags: 0
