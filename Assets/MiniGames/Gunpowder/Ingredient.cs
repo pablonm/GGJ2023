@@ -26,12 +26,14 @@ public class Ingredient : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDr
     void IDragHandler.OnDrag(PointerEventData eventData)
     {
         transform.position = eventData.position;
+        GetComponent<CanvasGroup>().alpha = 1;
     }
 
     void IEndDragHandler.OnEndDrag(PointerEventData eventData)
     {
         img.raycastTarget = true;
         transform.position = startingSlot;
+        GetComponent<CanvasGroup>().alpha = 0;
     }
 }
 
