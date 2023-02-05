@@ -897,7 +897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66adc7c50496d7f418b66e4f66ed7f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MiniGameSceneName: RomanEmpireMiniGame
+  MiniGameSceneName: PlantingMingame
 --- !u!114 &782551260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1596,7 +1596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66adc7c50496d7f418b66e4f66ed7f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MiniGameSceneName: RomanEmpireMiniGame
+  MiniGameSceneName: Planets
 --- !u!114 &2005274972
 MonoBehaviour:
   m_ObjectHideFlags: 0
