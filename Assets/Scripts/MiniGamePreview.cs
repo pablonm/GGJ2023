@@ -15,6 +15,9 @@ public class MiniGamePreview : MonoBehaviour
 
     IEnumerator OpenMiniGameCoroutine()
     {
+        GameObject BGM = GameObject.Find("BGMusic");
+        if (BGM != null)
+            BGM.GetComponent<AudioSource>().Pause();
         FadeToBlack.FadeOut(1f, null);
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(MiniGameSceneName, LoadSceneMode.Single);

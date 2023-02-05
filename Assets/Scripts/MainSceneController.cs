@@ -8,11 +8,15 @@ public class MainSceneController : MonoBehaviour
     {
         GoToAge(GameState.previousAge, true);
         FadeToBlack.FadeIn(1f, () => GoToAge(GameState.currentAge));
+        GameObject BGM = GameObject.Find("BGMusic");
+        if (BGM != null)
+            BGM.GetComponent<AudioSource>().UnPause();
     }
     
 
     public void GoToAge(Ages targetAge)
     {
+        SFXController.Play("makingProgress");
         GoToAge(targetAge, false);
     }
 
